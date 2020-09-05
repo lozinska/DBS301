@@ -1,0 +1,19 @@
+Business rules.
+
+1.Each property can be posted in zero or one agency, while agency can have zero or 
+many properties that are used by John Wick.
+2.Each property can be sold zero or many times and during each sale can be sold 1 or more properties
+3.Each property can have one and only one address and on one address can be register one and only one property.
+4.Each address can belong to one and only one residencial area while residencial area can have zero to many addresses.
+5.Each ownership can have one and only one property while each property can have one or many ownerships.
+6.Each client can have zero to many ownerships and each ownership can have zero to many clients.
+7.Each client can refer John Wick zero or more times while each referal belong to one and only one client
+8.Each property can be advertise zero to mamy times while each advertisement can advertize one and only one property at a time
+9.Each advertisement can be posted in zero or many outlets while each outlet can have zero or more ads.
+10.ADDRESS is a parent table to PROPERTY which is mean that if the address not exist the property can not exist.
+11.AGENCY has a referencial integrity to PROPERTY, but it is not mandatory NOT NULL because not all properties will belong to the AGENCY
+12.ADDRESS has a foreign key from RESIDENTIAL and it's NOT NULL because all adresses must belong to specific area.
+13.Each property has owner(owners) so PROPERTY has referencial integrity with OWNERSHIPINFO this mean that each ownership in any moment must have an propertyId.
+14.CLIENTINFO and OWNERSHIPINFO has referential integrity because if there is an ownershipId exist there is should be at list one client to who this ownershipid belong to.
+15.Each advertisement must belong to 1 or more outlets, but a single outlet can have zero or more advertisements 
+16.Each advertisement must contain at least one propertyId and each propertyId may be in an advertisement

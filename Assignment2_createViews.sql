@@ -4,7 +4,6 @@
 -- DBS301 Assignment2
 -- April 9, 2019
 -- Purpose: Create database for John Wick. Creating views
--- dbs301_191a39 contains all the tables with data
 ----------------------------------------------------------------------
 
 --Creates view that will produce the state of John Wick business
